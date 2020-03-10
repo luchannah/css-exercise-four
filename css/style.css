@@ -1,4 +1,78 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
 }
+
+
+
+.img-resize {
+  height: 300px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  padding-bottom: 5%;
+}
+
+#object-position-1 {
+  object-position: 10% 90%;
+}
+
+#object-position-2 {
+  object-position: 90% 10%;
+}
+
+#object-position-3 {
+  object-position: 0% 100%;
+}
+
+#object-position-4 {
+  object-position: 0% 100%;
+}
+
+.text{
+  position: absolute;
+  padding: 11% 0% 0% 15%;
+  font-size: 2em;
+}
+
+.emphasis {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-align: center;
+  padding: 5%;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 500px){
+.row { grid-template-columns: repeat(2, 1fr); }
+}
+
+.text{
+  position: absolute;
+  padding: 5% 0% 0% 5%;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 900px){
+.row { grid-template-columns: repeat(4, 1fr); }
+}
+
+.text{
+  position: absolute;
+  padding: 3% 0% 0% 3%;
+  font-size: 2em;
+}
+Change from clone
